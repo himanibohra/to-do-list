@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d1b1b1;
+    color: #2f2d2d;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 700px;
+    margin: 100px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"], input[type="date"] {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ccc;
+    border-radius: 20px;
+}
+
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: 1.5px solid #ccc ;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0e59aa;
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-content {
+    display: flex;
+    align-items: center;
+}
+
+.task-content input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-content span {
+    margin-right: 10px;
+}
+
+.edit, .delete {
+    cursor: pointer;
+    color: #007BFF;
+}
+
+.dark-mode {
+    background-color: #d1b1b1;
+    color: #f4f4f4;
+}
+
+.dark-mode .container {
+    background-color: #444; 
+    color: #f4f4f4; 
+}
+
+.dark-mode h1 {
+    color: #f4f4f4;
+}
+
+.dark-mode ul {
+    color: #f4f4f4; 
+}
+
+.dark-mode input, .dark-mode button {
+    background-color: #fcfcfc;
+    color: #2a2727;
+    border: 1px solid #5b4e4e;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+}
+
+.actions > * {
+    margin-left: 10px;
+}
